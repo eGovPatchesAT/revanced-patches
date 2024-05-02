@@ -7,7 +7,7 @@ plugins {
     signing
 }
 
-group = "app.revanced"
+group = "fe.revanced.patches"
 
 repositories {
     mavenCentral()
@@ -35,14 +35,14 @@ kotlin {
 tasks {
     withType(Jar::class) {
         manifest {
-            attributes["Name"] = "ReVanced Patches template"
-            attributes["Description"] = "Patches template for ReVanced."
+            attributes["Name"] = "eGovPatchesAT ReVanced patches"
+            attributes["Description"] = "eGovPatchesAT ReVanced patches"
             attributes["Version"] = version
             attributes["Timestamp"] = System.currentTimeMillis().toString()
-            attributes["Source"] = "git@github.com:revanced/revanced-patches-template.git"
-            attributes["Author"] = "ReVanced"
-            attributes["Contact"] = "contact@revanced.app"
-            attributes["Origin"] = "https://revanced.app"
+            attributes["Source"] = "git@github.com:eGovPatchesAT/revanced-patches.git"
+            attributes["Author"] = "eGovPatchesAT"
+            attributes["Contact"] = "1fexd@420blaze.it"
+            attributes["Origin"] = "https://github.com/eGovPatchesAT"
             attributes["License"] = "GNU General Public License v3.0"
         }
     }
@@ -83,7 +83,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/revanced/revanced-patches-template")
+            url = uri("https://maven.pkg.github.com/eGovPatchesAT/revanced-patches")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
@@ -96,9 +96,9 @@ publishing {
             from(components["java"])
 
             pom {
-                name = "ReVanced Patches template"
-                description = "Patches template for ReVanced."
-                url = "https://revanced.app"
+                name = "eGovPatchesAT ReVanced patches"
+                description = "eGovPatchesAT ReVanced patches"
+                url = "https://github.com/eGovPatchesAT"
 
                 licenses {
                     license {
@@ -108,15 +108,15 @@ publishing {
                 }
                 developers {
                     developer {
-                        id = "ReVanced"
-                        name = "ReVanced"
-                        email = "contact@revanced.app"
+                        id = "eGovPatchesAT"
+                        name = "eGovPatchesAT"
+                        email = "eGovPatchesAT@420blaze.it"
                     }
                 }
                 scm {
-                    connection = "scm:git:git://github.com/revanced/revanced-patches-template.git"
-                    developerConnection = "scm:git:git@github.com:revanced/revanced-patches-template.git"
-                    url = "https://github.com/revanced/revanced-patches-template"
+                    connection = "scm:git:git://github.com/eGovPatchesAT/revanced-patches.git"
+                    developerConnection = "scm:git:git@github.com:eGovPatchesAT/revanced-patches.git"
+                    url = "https://github.com/eGovPatchesAT/revanced-patches"
                 }
             }
         }
