@@ -1,3 +1,10 @@
+# 1.0.0 (2024-05-02)
+
+
+### Features
+
+* Add existing ID Austria patches ([37a8707](https://github.com/eGovPatchesAT/revanced-patches/commit/37a8707746678e8eb3586e1d4c9e29f4a9e4856a))
+
 ## [1.0.1](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.0...v1.0.1) (2024-02-21)
 
 
